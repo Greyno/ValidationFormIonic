@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Form Validation
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="loginForm.formUsername"></ion-input>
+    </ion-item>
+
+        <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="loginForm.formPassword"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="dark" round (click)="didSubmit()">Submit</button>
+
+  <ion-icon name="thumbs-up" *ngIf="success"></ion-icon>
+
+</ion-content>
+
