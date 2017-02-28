@@ -9,7 +9,7 @@ import { NavController } from 'ionic-angular';
 export class HomePage {
 
   private success : any;
-  private serverURL : "";
+  private serverURL : "localhost:8080";
 
   private loginForm: any = {
     formUsername: "",
