@@ -18,7 +18,7 @@
       <ion-input type="password" [(ngModel)]="loginForm.formPassword"></ion-input>
     </ion-item>
   </ion-list>
-  <button ion-button color="dark" round (click)="didSubmit()">Submit</button>
+  <button ion-button color="dark" round (click)="didSubmit(loginForm.formUsernamem, loginForm.formPassword)">Submit</button>
 
   <ion-icon name="thumbs-up" *ngIf="success"></ion-icon>
 
